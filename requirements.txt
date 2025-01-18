@@ -39,7 +39,8 @@ speedtest-cli
 telegraph
 tenacity
 tgcrypto
+uv
 uvloop
 xattr
-yt-dlp
+yt-dlp[default,curl-cffi]
 pytz
