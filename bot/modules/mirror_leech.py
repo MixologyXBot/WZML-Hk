@@ -392,8 +392,8 @@ async def wzmlxcb(_, query):
                 if ind == len(logFileLines): 
                     break
                 ind += 1
-            startLine = f"<b>Showing Last {ind} Lines from log.txt:</b> \n\n----------<b>START LOG</b>----------\n\n"
-            endLine = "\n----------<b>END LOG</b>----------"
+            startLine = f"<b>Showing Last {ind} Lines from log.txt:</b> \n\n<pre language='python'>"
+            endLine = "\n----------<b>END LOG</b>----------</pre>"
             btn = ButtonMaker()
             btn.ibutton('Cʟᴏsᴇ', f'wzmlx {user_id} close')
             await sendMessage(message, startLine + escape(Loglines) + endLine, btn.build_menu(1))
